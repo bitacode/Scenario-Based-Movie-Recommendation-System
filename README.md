@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Scenario-Based Movie Recommendation System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> This is a private repository licensed for internal use only. Redistribution or public sharing of this code is prohibited without explicit permission. For more details, see the LICENSE file.
 
-## Available Scripts
+Welcome to the **Popcorn** project repository! This project demonstrates our research on scenario-based recommendation systems, showcasing an interactive movie recommendation system based on user preferences and scenarios.
 
-In the project directory, you can run:
+## Recreate This Project
 
-### `npm start`
+After cloning this repository to your local machine, follow the steps below to set up and run the project.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Setting Up the Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Navigate to the frontend directory:
+   
+    ```bash
+       cd frontend
+    ```
+2. Install dependencies to recreate the `node_modules` folder:
+   
+    ```bash
+        npm install
+    ```
+3. This project uses Chakra UI version 3.0.0. To ensure proper styling and functionality, please refer to the [Chakra UI documentation](https://www.chakra-ui.com/docs/get-started/installation) and install any additional required packages.
 
-### `npm test`
+## Sentiment Analysis Model
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The `app.py` file in the backend directory requires a `.keras` model file. Our setup utilises a Fine-Tuned BERT + CNN model, which is not included in this repository due to GitHub's file size limitations.
 
-### `npm run build`
+However, you can experiment with other available models on our GitHub account:
+- [RNN](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-RNN.git)
+- [LSTM](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-LSTM.git)
+- [GRU](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-GRU.git)
+- [TFBertForSequenceClassification](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-Fine-Tuned-BERT.git)
+- [CNN](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-CNN.git)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to explore these models!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Note: Ensure the backend is running before starting the frontend.
 
-### `npm run eject`
+1. **Start the backend:**
+   - Open a terminal and navigate to the backend directory:
+     ```bash
+         cd backend
+     ```
+   - Activate your Conda environment (or create a virtual environment if you prefer not to use Conda):
+      ```bash
+         conda activate your_conda_env_name
+      ```
+   - Run the backend server:
+      ```bash
+         python app.py
+      ```
+   - Wait until you see the message **Debugger is active!** in your terminal, indicating the backend is running.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2. **Start the frontend:**
+   - Open a new terminal (keeping the backend terminal open) and start the frontend:
+     ```bash
+         npm start
+     ```
+   - Visit [http://localhost:3000](http://localhost:3000) in your browser to access the application.
+  
