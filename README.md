@@ -59,6 +59,7 @@ Feel free to explore these models!
 
 2. **Start the frontend:**
    - Open a new terminal (keeping the backend terminal open) and start the frontend:
+     
      ```bash
          npm start
      ```
