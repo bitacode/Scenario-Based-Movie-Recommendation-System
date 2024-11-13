@@ -1,0 +1,59 @@
+                            "Popcorn" License
+
+   Copyright (c) 2024, Tabita Gabriela Evanglista Simorangkir
+
+   Permission is hereby granted to any person (the "Licensee") obtaining a
+   copy of this software and associated documentation files (the "Software"),
+   subject to the following conditions:
+
+   1. Limited Usage Rights
+
+      Licensee is permitted to use, copy, and modify the Software only
+      if substantial changes are made to create a new and unique version
+      of the Software (the "Derivative Work"). Minor modifications, such
+      as bug fixes, small optimisations, or stylistic changes, do not
+      qualify as substantial changes.
+
+   2. Prohibited Actions Without Substantial Changes
+
+      (a) Licensee may not distribute, sublicense, or use the Software in its
+          original form or with minor modifications that do not meet the
+          criteria of a substantial change.
+
+      (b) Any use of the Software in substantially unaltered form, including
+          redistribution or commercial use, is strictly prohibited without
+          explicit written permission from the original author(s).
+
+   3. Definition of Substantial Change
+
+      For the purposes of this License, a substantial change shall be defined
+      as modifications that significantly alter the functionality, structure,
+      or purpose of the Software. Examples include, but are not limited to:
+
+      (a) Implementing new features that extend the original capabilities of
+          the Software.
+
+      (b) Reworking core components to create a new application or tool based
+          on the original Software.
+
+      (c) Integrating the Software into a larger project where it is no longer
+          recognisable as the original Software.
+
+   4. Attribution
+
+      If the Derivative Work is distributed, the Licensee must provide appropriate
+      credit to the original author(s) of the Software, link to the original
+      repository, and indicate if changes were made. This must be done in a
+      reasonable manner, but not in any way that suggests the original author
+      endorses the Licensee or their use of the Software.
+
+   5. No Warranty
+
+      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+      IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+      FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY,
+      WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+      CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+                                 
