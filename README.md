@@ -41,14 +41,17 @@ Feel free to explore these models!
 
 1. **Start the backend:**
    - Open a terminal and navigate to the backend directory:
+   
      ```bash
          cd backend
      ```
    - Activate your Conda environment (or create a virtual environment if you prefer not to use Conda):
+     
       ```bash
          conda activate your_conda_env_name
       ```
    - Run the backend server:
+     
       ```bash
          python app.py
       ```
