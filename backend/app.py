@@ -38,7 +38,6 @@ title_vectors = np.vstack(document['title_vectorized'].apply(np.array).values)
 genres_vectors = np.vstack(document['genres_vectorized'].apply(np.array).values)
 
 def semantic_search(input_keywords, df, top_k=9, initial_top_k=15):
-    """Performs semantic search using cosine similarity based on input keywords."""
     results = []
     valid_query_types = {
         'Synopsis': synopsis_vectors,
@@ -66,7 +65,7 @@ def semantic_search(input_keywords, df, top_k=9, initial_top_k=15):
         else:
             query_vector = encode_text(query).reshape(1, -1)
 
-        # Compute cosine similarity
+        # Calculate cosine similarity
         similarities = cosine_similarity(query_vector, vectors).flatten()
 
         # Initial top-k matches based on similarity scores
@@ -121,7 +120,7 @@ def predict_sentiments(texts):
     token_type_ids = encoded_inputs['token_type_ids']
     attention_mask = encoded_inputs['attention_mask']
     
-    # Perform prediction
+    # Sentiment prediction
     predictions = sentiment_model.predict([input_ids, token_type_ids, attention_mask])
     predicted_classes = np.argmax(predictions, axis=1)
     mapped_predictions = [sentiment_mapping[class_index] for class_index in predicted_classes]
@@ -188,7 +187,7 @@ def get_sorted_movies():
                 'id': movie_id,
                 'Title': movie['Title'],
                 'Score': score,
-                #'Reviews': movie['Reviews'],  # Include reviews if needed
+                #'Reviews': movie['Reviews'],
                 'Poster': movie_metadata.get('Poster'),
                 'Genres': movie_metadata.get('Genres'),
                 'Year': movie_metadata.get('Year'),
@@ -215,7 +214,7 @@ def get_sorted_movies():
 @app.route('/classify_reviews', methods=['GET', 'POST'])
 def classify_reviews():
     try:
-        # Retrieve movie_id from the request
+        # Retrieve id from the request
         movie_id = request.args.get('id') or request.json.get('id')
 
         if not movie_id:
@@ -248,7 +247,7 @@ def classify_reviews():
         for idx, review in enumerate(movie_data['Reviews']):
             review['Sentiment'] = predictions[idx]
 
-        # Cache the result for this movie_id
+        # Store in cache
         sentiment_cache[movie_id] = movie_data
 
         # Return the modified movie data with predicted sentiments
