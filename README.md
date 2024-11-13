@@ -24,7 +24,7 @@ After cloning this repository to your local machine, follow the steps below to s
 
 ## Sentiment Analysis Model
 
-The `app.py` file in the backend directory requires a `.keras` model file. Our setup utilises a Fine-Tuned BERT + CNN model, which is not included in this repository due to GitHub's file size limitations.
+The `app.py` file in the backend directory requires a `.keras` model file. Our setup utilises our proposed Fine-Tuned BERT + CNN model, which is not included in this repository due to GitHub's file size limitations.
 
 However, you can experiment with other available models on our GitHub account:
 - [RNN](https://github.com/bitacode/Movie-Reviews-Sentiment-Classification-RNN.git)
