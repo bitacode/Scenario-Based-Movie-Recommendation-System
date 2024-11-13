@@ -64,4 +64,7 @@ Feel free to explore these models!
          npm start
      ```
    - Visit [http://localhost:3000](http://localhost:3000) in your browser to access the application.
-  
+
+## Showcase
+
+[![Watch the video](https://github.com/bitacode/images/blob/main/thumbnail-2.png)](https://youtu.be/wKY4JtDLRiE)
